@@ -1,11 +1,11 @@
 <template>
   <div class="about-us">
     <ul>
-      <li>
+      <!-- <li>
         <img src="./images/Nano.png">
         <p>UI components designed by <a target="_blank" href="https://naaano.com/">Nano</a></p>
         <p>You can follow her on <a target="_blank" href="https://www.instagram.com/nanacat733/">Instagram</a></p>
-      </li>
+      </li> -->
       <li>
         <img src="./images/justbefree.jpeg">
         <p>UI components developed by <a target="_blank" href="http://lizhuang.xyz/">Just be free</a></p>
