@@ -2,11 +2,11 @@
 * @Author: Just be free
 * @Date:   2020-07-10 09:56:25
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-09-28 15:29:21
+* @Last Modified time: 2021-09-28 18:11:37
 * @E-mail: justbefree@126.com
 */
 const themeConfig = require("./themeConfig");
-const base = process.env.NODE_ENV === 'production' ? "/docs/" : "/";
+const base = process.env.NODE_ENV === 'production' ? "/" : "/";
 module.exports = {
   // title: "yn-components 组件案例文档",
   // description: "前端基础组件技术文档",
