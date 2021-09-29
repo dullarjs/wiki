@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/counter"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/counter"></demo-mobile>
 # yn-counter
 
 <demo-counter></demo-counter>

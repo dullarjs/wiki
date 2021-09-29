@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/skeleton"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/skeleton"></demo-mobile>
 # skeleton
 
 <demo-skeleton demo="1"></demo-skeleton>

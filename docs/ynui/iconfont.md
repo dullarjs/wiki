@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/iconfont"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/iconfont"></demo-mobile>
 # iconfont
 ```vue
 <yn-iconfont :name="iconphone-number" @click="handleClick"></yn-iconfont>

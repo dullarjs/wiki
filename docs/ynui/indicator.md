@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/indicator"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/indicator"></demo-mobile>
 # indicator
 
 

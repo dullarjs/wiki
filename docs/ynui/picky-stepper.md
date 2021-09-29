@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/pickyStepper"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/pickyStepper"></demo-mobile>
 # picky-stepper
 
 <demo-pickyStepper demo="1"></demo-pickyStepper>

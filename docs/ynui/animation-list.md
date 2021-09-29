@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/animation-list"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/animation-list"></demo-mobile>
 # animation-list
 
 ::: warning 注意

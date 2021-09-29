@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/swipe"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/swipe"></demo-mobile>
 # swipe
 
 <demo-swipe demo="1"></demo-swipe>

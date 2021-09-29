@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/flex"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/flex"></demo-mobile>
 # flex
 
 <demo-flex demo="1"></demo-flex>

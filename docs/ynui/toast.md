@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/toast"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/toast"></demo-mobile>
 # toast
 
 ### basic usage

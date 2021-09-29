@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/pull-refresh"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/pull-refresh"></demo-mobile>
 # pull-refresh
 
 <demo-pullRefresh></demo-pullRefresh>

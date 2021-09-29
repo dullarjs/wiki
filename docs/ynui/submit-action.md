@@ -1,4 +1,4 @@
-<demo-mobile location="http://ui.dullar.xyz/earth/#/submitAction"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/submitAction"></demo-mobile>
 # submit-action
 
 <demo-submitAction></demo-submitAction>
