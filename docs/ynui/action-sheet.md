@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/actionSheet"></demo-mobile>
 # action-sheet
 
 <demo-actionSheet demo="1"></demo-actionSheet>

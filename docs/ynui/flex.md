@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/flex"></demo-mobile>
 # flex
 
 <demo-flex demo="1"></demo-flex>

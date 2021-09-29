@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/layout"></demo-mobile>
 # layout
 
 <demo-layout></demo-layout>

@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/field"></demo-mobile>
 # field
 
 #### basic usage

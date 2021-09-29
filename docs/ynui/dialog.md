@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/dialog"></demo-mobile>
 # dialog
 
 <demo-dialog demo="1"></demo-dialog>

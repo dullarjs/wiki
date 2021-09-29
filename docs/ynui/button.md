@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/button"></demo-mobile>
 # button
 
 <demo-button demo="1"></demo-button>

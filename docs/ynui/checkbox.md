@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/checkbox"></demo-mobile>
 # checkbox
 
 <demo-checkbox></demo-checkbox>

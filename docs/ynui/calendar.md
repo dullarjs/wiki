@@ -1,6 +1,5 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/calendar"></demo-mobile>
 # calendar
-
-<iframe width="320" height="568" style="outline: none;border: 1px solid #eee;box-shadow: 10px;" src="http://ui.dullar.xyz/earth/#/calendar"></iframe>
 
 ```vue
 <template>

@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/cityPicker"></demo-mobile>
 # city-picker
 
 <demo-cityPicker demo="1"></demo-cityPicker>

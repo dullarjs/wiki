@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/dropdownMenu"></demo-mobile>
 # dropdown-menu
 
 <demo-dropdownMenu></demo-dropdownMenu>

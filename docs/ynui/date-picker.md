@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/datePicker"></demo-mobile>
 # date-picker
 
 <demo-datePicker demo="1"></demo-datePicker>

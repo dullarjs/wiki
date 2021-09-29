@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/spin"></demo-mobile>
 # spin
 
 <demo-spin demo="1"></demo-spin>

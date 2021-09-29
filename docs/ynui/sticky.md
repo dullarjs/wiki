@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/sticky"></demo-mobile>
 # sticky
 
 <demo-sticky></demo-sticky>

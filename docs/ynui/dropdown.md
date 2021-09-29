@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/dropdown"></demo-mobile>
 # yn-dropdown
 
 <demo-dropdown></demo-dropdown>

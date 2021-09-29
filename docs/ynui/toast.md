@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/toast"></demo-mobile>
 # toast
 
 ### basic usage
@@ -14,12 +15,18 @@ this.Toast("Hello, world");
 <demo-toast demo="1"></demo-toast>
 
 ``` js
-this.Toast({ message: "hello, middle", position: "middle" });
+this.Toast({
+  message: "hello, middle",
+  position: "middle"
+});
 ```
 
 
 <demo-toast demo="2"></demo-toast>
 
 ``` js
-this.Toast({ message: "hello, middle", position: "bottom" });
+this.Toast({
+  message: "hello, middle",
+  position: "bottom"
+});
 ```

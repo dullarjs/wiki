@@ -1,3 +1,4 @@
+<demo-mobile location="http://ui.dullar.xyz/earth/#/radiobox"></demo-mobile>
 # radiobox
 
 <demo-radiobox></demo-radiobox>
