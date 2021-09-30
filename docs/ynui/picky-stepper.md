@@ -1,7 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/pickyStepper"></demo-mobile>
 # picky-stepper
 
-<demo-pickyStepper demo="1"></demo-pickyStepper>
+## 简单用法（单选）
 ```vue
 <template>
   <div>
@@ -74,7 +74,7 @@ export default {
 </script>
 ```
 
-<demo-pickyStepper demo="2"></demo-pickyStepper>
+## 简单用法（多选）
 ```vue
 <template>
   <div>
@@ -133,7 +133,7 @@ export default {
 </script>
 ```
 
-<demo-pickyStepper demo="3"></demo-pickyStepper>
+## 简单用法(可以不需要异步操作)
 ```vue
 <template>
   <div>
@@ -207,7 +207,7 @@ export default {
 </script>
 ```
 
-<demo-pickyStepper demo="4"></demo-pickyStepper>
+## 高级用法（多步骤）
 ```vue
 <template>
   <div>
@@ -282,7 +282,7 @@ export default {
 ```
 
 
-<demo-pickyStepper demo="5"></demo-pickyStepper>
+## 高级用法实际案例（多步骤）
 ```vue
 <template>
   <div>
@@ -344,7 +344,7 @@ export default {
 };
 </script>
 ```
-<demo-pickyStepper demo="6"></demo-pickyStepper>
+## 动态数据案例（多步骤）
 ```vue
 <template>
   <div>

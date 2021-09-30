@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/checkbox"></demo-mobile>
 # checkbox
 
-<demo-checkbox></demo-checkbox>
 ```vue
 <template>
   <div>

@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/layout"></demo-mobile>
 # layout
 
-<demo-layout></demo-layout>
 ```vue
 <template>
   <div class="layout-box">

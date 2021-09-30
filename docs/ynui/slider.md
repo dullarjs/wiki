@@ -1,22 +1,19 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/slider"></demo-mobile>
 # slider
 
-### basic usage
+## basic usage
 
-<demo-slider demo="1"></demo-slider>
 ```vue
 <yn-slider v-model="value"></yn-slider>
 ```
 
 
-### set steps
-<demo-slider demo="2"></demo-slider>
+## set steps
 ```vue
 <yn-slider v-model="value" step="10"></yn-slider>
 ```
 
-### change drag icon
-<demo-slider demo="3"></demo-slider>
+## change drag icon
 ```vue
 <yn-slider
   v-model="value"
@@ -37,8 +34,7 @@ function parse(e) {
 }
 ```
 
-### show tips
-<demo-slider demo="4"></demo-slider>
+## show tips
 ```vue
 <h3>tip value {{ value4 }}</h3>
 <yn-button type="primary" @click="update" class="update">更新</yn-button>
@@ -61,20 +57,7 @@ function doubleValue(e) {
 
 
 
-### dynamic register slider component
-<demo-slider demo="5"></demo-slider>
-
-
-
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+## dynamic register slider component
 
 ```vue
 <yn-dropdown-menu>
@@ -108,8 +91,7 @@ function doubleValue(e) {
 
 
 
-### inside popup component
-<demo-slider demo="6"></demo-slider>
+## inside popup component
 ```vue
 <yn-popup v-model="visiable">
   <div class="box">

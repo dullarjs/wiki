@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/popup"></demo-mobile>
 # popup
 
-<demo-popup demo="1"></demo-popup>
 
 ```vue
 <yn-popup v-model="popup1" position="bottom">
@@ -14,7 +13,6 @@
 </yn-popup>
 ```
 
-<demo-popup demo="2"></demo-popup>
 
 ```vue
 <yn-popup v-model="popup2" position="right" :showCloseIcon="true">
@@ -22,7 +20,6 @@
 </yn-popup>
 ```
 
-<demo-popup demo="3"></demo-popup>
 
 ```vue
 <yn-popup v-model="popup3" position="top" :showCloseIcon="true">
@@ -30,7 +27,6 @@
 </yn-popup>
 ```
 
-<demo-popup demo="4"></demo-popup>
 
 ```vue
 <yn-popup v-model="popup4" position="bottom" :showCloseIcon="true">
@@ -46,7 +42,6 @@
 </yn-popup>
 ```
 
-<demo-popup demo="5"></demo-popup>
 
 ```vue
 <yn-popup v-model="popup6" position="middle" :showCloseIcon="true" fixed>

@@ -1,7 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/actionSheet"></demo-mobile>
 # action-sheet
 
-<demo-actionSheet demo="1"></demo-actionSheet>
+## 基础用法
 ```vue
 <template>
   <yn-action-sheet
@@ -33,7 +33,8 @@ export default {
 }
 </script>
 ```
-<demo-actionSheet demo="2"></demo-actionSheet>
+
+## 带取消 & 禁止某些选线
 ```vue
 <template>
   <yn-action-sheet
@@ -66,7 +67,8 @@ export default {
 }
 </script>
 ```
-<demo-actionSheet demo="3"></demo-actionSheet>
+
+## 异步加载
 ```vue
 <template>
   <yn-action-sheet

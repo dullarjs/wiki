@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/radiobox"></demo-mobile>
 # radiobox
 
-<demo-radiobox></demo-radiobox>
 
 ```vue
 <template>

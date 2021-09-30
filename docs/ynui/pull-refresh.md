@@ -1,7 +1,6 @@
-<demo-mobile location="https://ui.dullar.xyz/earth/#/pull-refresh"></demo-mobile>
+<demo-mobile location="https://ui.dullar.xyz/earth/#/pullRefresh"></demo-mobile>
 # pull-refresh
 
-<demo-pullRefresh></demo-pullRefresh>
 ```vue
 <template>
   <div>

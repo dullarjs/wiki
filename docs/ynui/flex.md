@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/flex"></demo-mobile>
 # flex
 
-<demo-flex demo="1"></demo-flex>
 
 ```vue
 <yn-flex justifyContent="center" alignItems="center" class="face">
@@ -13,7 +12,6 @@
 ```
 
 
-<demo-flex demo="2"></demo-flex>
 
 ```vue
 <yn-flex justifyContent="spaceBetween" class="face">
@@ -22,7 +20,6 @@
 </yn-flex>
 ```
 
-<demo-flex demo="3"></demo-flex>
 
 ```vue
 <yn-flex justifyContent="spaceBetween" class="face">
@@ -32,7 +29,6 @@
 </yn-flex>
 ```
 
-<demo-flex demo="4"></demo-flex>
 
 ```vue
 <yn-flex justifyContent="spaceBetween" flexDirection="column" class="face">
@@ -51,7 +47,6 @@
 </yn-flex>
 ```
 
-<demo-flex demo="5"></demo-flex>
 
 ```vue
 <yn-flex justifyContent="spaceBetween" flexDirection="column" class="face">
@@ -75,7 +70,6 @@
 </yn-flex>
 ```
 
-<demo-flex demo="6"></demo-flex>
 
 ```vue
 <yn-flex justifyContent="spaceBetween" flexDirection="column" class="face">

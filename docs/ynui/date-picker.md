@@ -1,11 +1,11 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/datePicker"></demo-mobile>
 # date-picker
 
-<demo-datePicker demo="1"></demo-datePicker>
+## default
 ```vue
 <yn-date-picker v-model="show" @confirm="handleConfirm"></yn-date-picker>
 ```
-<demo-datePicker demo="2"></demo-datePicker>
+## custom
 ```vue
 <yn-date-picker
   v-model="show2"

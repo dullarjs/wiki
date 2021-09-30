@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/cityPicker"></demo-mobile>
 # city-picker
 
-<demo-cityPicker demo="1"></demo-cityPicker>
 ```vue
 <template>
   <div>
@@ -166,7 +165,7 @@ export default {
 };
 </script>
 ```
-<demo-cityPicker demo="2"></demo-cityPicker>
+## 国际城市
 ```vue
 <yn-city-picker
   :alphaBeta="getAlphaBeta()"
@@ -179,7 +178,7 @@ export default {
   :tabs="tabs2"
 ></yn-city-picker>
 ```
-<demo-cityPicker demo="3"></demo-cityPicker>
+## 全部城市
 ```vue
 <yn-city-picker
   :alphaBeta="getAlphaBeta()"
@@ -190,7 +189,7 @@ export default {
   v-model="picker3"
 ></yn-city-picker>
 ```
-<demo-cityPicker demo="4"></demo-cityPicker>
+## 受限城市
 ```vue
 <yn-city-picker
   @pick="handlePick"
@@ -199,7 +198,7 @@ export default {
   limited
 ></yn-city-picker>
 ```
-<demo-cityPicker demo="5"></demo-cityPicker>
+## 显示历史记录
 ```vue
 <yn-city-picker
   @pick="handlePick"
@@ -210,7 +209,7 @@ export default {
   :alphaBeta="getAlphaBeta()"
 ></yn-city-picker>
 ```
-<demo-cityPicker demo="6"></demo-cityPicker>
+## 不显示热门城市
 ```vue
 <yn-city-picker
   :alphaBeta="getAlphaBeta()"
@@ -221,7 +220,7 @@ export default {
   :showHotCity="false"
 ></yn-city-picker>
 ```
-<demo-cityPicker demo="7"></demo-cityPicker>
+## 可搜索
 ```vue
 <yn-city-picker
   :search="getSearch()"
@@ -234,7 +233,7 @@ export default {
   :parse="parse"
 ></yn-city-picker>
 ```
-<demo-cityPicker demo="8"></demo-cityPicker>
+## 可搜索（三列布局）
 ```vue
 <yn-city-picker
   :search="getSearch()"

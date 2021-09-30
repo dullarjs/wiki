@@ -1,7 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/dialog"></demo-mobile>
 # dialog
 
-<demo-dialog demo="1"></demo-dialog>
+## Async alert
 ```js
 this.Dialog.alert({
   title: "这个是标题",
@@ -15,12 +15,12 @@ this.Dialog.alert({
 });
 ```
 
-<demo-dialog demo="2"></demo-dialog>
+## Sync alert
 ```js
 this.Dialog.alert({ title: "这个是标题", message: "这个是内容" });
 ```
 
-<demo-dialog demo="3"></demo-dialog>
+## Sync cancel, Async confirm
 ```js
 this.Dialog.confirm({
   title: "这个是标题",
@@ -29,7 +29,7 @@ this.Dialog.confirm({
 });
 ```
 
-<demo-dialog demo="4"></demo-dialog>
+## Async cancel, Async confirm
 ```js
 this.Dialog.confirm({
   title: "这个是标题",
@@ -48,7 +48,7 @@ this.Dialog.confirm({
 });
 ```
 
-<demo-dialog demo="5"></demo-dialog>
+## html
 ```js
 this.Dialog.confirm({
   title: "这个是标题",
@@ -66,13 +66,13 @@ this.Dialog.confirm({
   }
 });
 ```
-<demo-dialog demo="6"></demo-dialog>
+## advanced
 ```vue
 <yn-dialog v-model="show" closeModelOnClick>
   <img src="https://img.yzcdn.cn/vant/apple-3.jpg" />
 </yn-dialog>
 ```
-<demo-dialog demo="7"></demo-dialog>
+## advanced modal click callback
 ```vue
 <yn-dialog
   :value="this.show2"
@@ -82,7 +82,7 @@ this.Dialog.confirm({
   <img src="https://img.yzcdn.cn/vant/apple-3.jpg" />
 </yn-dialog>
 ```
-<demo-dialog demo="8"></demo-dialog>
+## 异步加载数据渲染问题
 ```vue
 <yn-dialog :value="this.show3" closeModelOnClick>
   <span>我是固定内容，我后面的是动态内容{{ text.value }}</span>

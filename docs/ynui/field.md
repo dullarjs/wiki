@@ -1,16 +1,14 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/field"></demo-mobile>
 # field
 
-#### basic usage
-<demo-field demo="1"></demo-field>
+## basic usage
 ```vue
 <yn-field-group>
   <yn-field v-model="basicUsage" placeholder="请输入内容"></yn-field>
 </yn-field-group>
 ```
 
-#### numeric type
-<demo-field demo="2"></demo-field>
+## numeric type
 ```vue
 <yn-field
   v-model="phoneNumber"
@@ -23,8 +21,7 @@
 ></yn-field>
 ```
 
-#### password
-<demo-field demo="3"></demo-field>
+## password
 ```vue
 <yn-field
   v-model="userPassword"
@@ -34,8 +31,7 @@
 ></yn-field>
 ```
 
-#### readonly
-<demo-field demo="4"></demo-field>
+## readonly
 ```vue
 <yn-field
   v-model="readonly"
@@ -44,8 +40,7 @@
   readonly
 ></yn-field>
 ```
-#### disabled
-<demo-field demo="5"></demo-field>
+## disabled
 ```vue
 <yn-field
   v-model="disabled"
@@ -54,8 +49,7 @@
   disabled
 ></yn-field>
 ```
-#### has clear icon
-<demo-field demo="6"></demo-field>
+## has clear icon
 ```vue
 <yn-field
   v-model="clear"
@@ -65,8 +59,7 @@
 ></yn-field>
 ```
 
-#### custom icon
-<demo-field demo="7"></demo-field>
+## custom icon
 ```vue
 <yn-field
   v-model="customIcon"
@@ -81,8 +74,7 @@
 :::
 
 
-#### custom label
-<demo-field demo="10"></demo-field>
+## custom label
 ```vue
 <yn-field
   v-model="customLabel"
@@ -91,8 +83,7 @@
 </yn-field>
 ```
 
-#### textarea
-<demo-field demo="8"></demo-field>
+## textarea
 ```vue
 <yn-field
   v-model="textarea"
@@ -104,8 +95,7 @@
 ></yn-field>
 ```
 
-#### mixed
-<demo-field demo="9"></demo-field>
+## mixed
 ```vue
 <yn-field-group>
   <yn-field v-model="ynName" label="中文姓名"></yn-field>

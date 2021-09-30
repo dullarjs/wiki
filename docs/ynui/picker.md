@@ -1,7 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/picker"></demo-mobile>
 # picker
 
-<demo-picker demo="1"></demo-picker>
+## single picker
 ```vue
 <template>
   <div>
@@ -48,7 +48,7 @@ export default {
 };
 </script>
 ```
-<demo-picker demo="2"></demo-picker>
+## multiple picker
 
 ```vue
 <template>
@@ -94,7 +94,7 @@ export default {
 ```
 
 
-<demo-picker demo="3"></demo-picker>
+## multiple picker2
 
 ```vue
 <template>
@@ -140,7 +140,7 @@ export default {
 </script>
 ```
 
-<demo-picker demo="4"></demo-picker>
+## 只有一个数据
 
 ```vue
 <template>
@@ -182,7 +182,7 @@ export default {
 </script>
 ```
 
-<demo-picker demo="5"></demo-picker>
+## 禁止某项选中
 ```vue
 <template>
   <div>

@@ -1,7 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/swipe"></demo-mobile>
 # swipe
 
-<demo-swipe demo="1"></demo-swipe>
+## 左右滑动
 ```vue
 <template>
   <div>
@@ -50,7 +50,7 @@ export default {
 }
 </script>
 ```
-<demo-swipe demo="2"></demo-swipe>
+## 上下滑动
 ```vue
 <template>
   <div>

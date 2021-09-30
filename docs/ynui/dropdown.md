@@ -1,7 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/dropdown"></demo-mobile>
 # yn-dropdown
 
-<demo-dropdown></demo-dropdown>
 
 ```vue
 <!-- 默认方向向下，down，弹出层borderRadius为0 -->

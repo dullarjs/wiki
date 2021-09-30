@@ -1,27 +1,21 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/spin"></demo-mobile>
 # spin
 
-<demo-spin demo="1"></demo-spin>
 ```vue
 <yn-spin type="triple-bounce"></yn-spin>
 ```
-<demo-spin demo="2"></demo-spin>
 ```vue
 <yn-spin type="snake"></yn-spin>
 ```
-<demo-spin demo="3"></demo-spin>
 ```vue
 <yn-spin type="fading-circle"></yn-spin>
 ```
-<demo-spin demo="4"></demo-spin>
 ```vue
 <yn-spin type="double-bounce"></yn-spin>
 ```
-<demo-spin demo="5"></demo-spin>
 ```vue
 <yn-spin type="rotate"></yn-spin>
 ```
-<demo-spin demo="6"></demo-spin>
 ```vue
 <yn-spin type="rotate-svg" size="50"></yn-spin>
 ```
