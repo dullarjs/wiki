@@ -2,18 +2,30 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-09-28 16:11:42
+* @Last Modified time: 2021-09-30 17:39:35
 * @E-mail: justbefree@126.com
 */
 module.exports = {
   nav: [
     { text: "Home", link: "/" },
-    { text: "components", link: "/ynui/" },
+    {
+      text: "components",
+      items: [
+        {
+          text: "@dullar/earth",
+          link: "/earth/"
+        },
+        {
+          text: "@dullar/mercury",
+          link: "/mercury/"
+        }
+      ]
+    },
     { text: "BEM", link: "/bem/" },
     { text: "cli", link: "/cli/" }
   ],
   sidebar: {
-    "/ynui/": [
+    "/earth/": [
       ["install.md", "Installation"],
       {
         title: "Basic components",
@@ -48,6 +60,56 @@ module.exports = {
           ["counter.md", "counter"],
           ["skeleton.md", "skeleton"],
           ["animation-list.md", "animation-list"],
+        ]
+      }
+    ],
+    "/mercury/": [
+      ["install.md", "Installation"],
+      {
+        title: "Basic components",
+        collapsable: true,
+        children: [
+          ["toast.md", "toast"],
+          ["indicator.md", "indicator"],
+          ["spin.md", "spin"],
+          ["iconfont.md", "iconfont"],
+          ["checkbox.md", "checkbox"],
+          ["radiobox.md", "radiobox"],
+          ["calendar.md", "calendar"],
+          ["popup.md", "popup"],
+          ["button.md", "button"],
+          ["flex.md", "flex"],
+          ["action-sheet.md", "action-sheet"],
+          ["field.md", "field"],
+          ["layout.md", "layout"],
+          ["sticky.md", "sticky"],
+          ["dialog.md", "dialog"],
+          ["picky-stepper.md", "picky-stepper"],
+          ["picker.md", "picker"],
+          ["swipe.md", "swipe"],
+          ["tabs.md", "tabs"],
+          ["slider.md", "slider"],
+          ["pull-refresh.md", "pull-refresh"],
+          ["date-picker.md", "date-picker"],
+          ["counter.md", "counter"],
+          ["skeleton.md", "skeleton"],
+          ["animation-list.md", "animation-list"],
+          ["category.md", "category"],
+          ["magnifier.md", "magnifier"],
+          ["modal.md", "modal"],
+          ["cascader.md", "cascader"],
+          ["table.md", "table"],
+          ["shipping-address.md", "shipping-address"],
+          ["elastic-serach.md", "elastic-serach"],
+          ["category-mobile.md", "category-mobile"],
+          ["address.md", "address"],
+          ["badge.md", "badge"],
+          ["tooltip.md", "tooltip"],
+          ["input.md", "input"],
+          ["tree.md", "tree"],
+          ["slide.md", "slide"],
+          ["image.md", "image"],
+          ["form.md", "form"],
         ]
       }
     ],
