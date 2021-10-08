@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-10-08 10:58:23
+* @Last Modified time: 2021-10-08 14:20:28
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -83,11 +83,9 @@ module.exports = {
           ["layout.md", "layout"],
           ["sticky.md", "sticky"],
           ["dialog.md", "dialog"],
-          ["picker.md", "picker"],
           ["swipe.md", "swipe"],
           ["tabs.md", "tabs"],
           ["pull-refresh.md", "pull-refresh"],
-          ["date-picker.md", "date-picker"],
           ["counter.md", "counter"],
           ["skeleton.md", "skeleton"],
           ["animation-list.md", "animation-list"],
