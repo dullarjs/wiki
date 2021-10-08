@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-09-30 17:39:35
+* @Last Modified time: 2021-10-08 10:58:23
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -79,16 +79,13 @@ module.exports = {
           ["popup.md", "popup"],
           ["button.md", "button"],
           ["flex.md", "flex"],
-          ["action-sheet.md", "action-sheet"],
           ["field.md", "field"],
           ["layout.md", "layout"],
           ["sticky.md", "sticky"],
           ["dialog.md", "dialog"],
-          ["picky-stepper.md", "picky-stepper"],
           ["picker.md", "picker"],
           ["swipe.md", "swipe"],
           ["tabs.md", "tabs"],
-          ["slider.md", "slider"],
           ["pull-refresh.md", "pull-refresh"],
           ["date-picker.md", "date-picker"],
           ["counter.md", "counter"],

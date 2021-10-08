@@ -1,4 +1,4 @@
-<demo-mobile location="https://ui.dullar.xyz/mercury/#/calendar"></demo-mobile>
+<demo-pc location="https://ui.dullar.xyz/mercury/#/calendar"></demo-pc>
 # calendar
 
 ```vue
