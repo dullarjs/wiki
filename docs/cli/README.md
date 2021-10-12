@@ -1,4 +1,4 @@
-# @dullar/cli
+# @dullar/cli [![npm version](https://badge.fury.io/js/@dullar%2Fcli.svg)](https://badge.fury.io/js/@dullar%2Fcli)
 
 ::: warning 注意
 如果你还不懂如何用基于class的形式写组件，建议你先看一下 [Vue Class Component](./vue-class-component.md)
