@@ -41,9 +41,27 @@ list|l          查看所有的模版
 dullar-cli list
 ```
 
-init| -i          生成一个新项目
+create| -c         生成一个新项目
 ```js
-dullar-cli init
+dullar-cli create -p vue
+```
+
+```js
+Strongs-MacBook-Pro:yn-mall stronglee$ dullar-cli create -p vue
+? Choose template (Use arrow keys)
+❯ vue2-js 
+  vue2-ts 
+  vue3-ts 
+
+// 推荐选择vue2-ts，enter
+
+
+Strongs-MacBook-Pro:yn-mall stronglee$ dullar-cli create -p vue
+? Choose template vue2-ts
+? Project name: 
+
+// 输入项目名称，enter
+
 ```
 
 

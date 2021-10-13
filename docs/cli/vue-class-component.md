@@ -1,5 +1,9 @@
 # Vue Class Component
 
+详细使用请参考官方文档[vue-class-component](https://class-component.vuejs.org/)
+
+以及 [vue-property-decorator](https://github.com/kaorun343/vue-property-decorator#Prop)
+
 > @Component 修饰符的作用是让当前这个类转换成一个Vue组件
 
 ```js

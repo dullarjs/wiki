@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-10-08 14:20:28
+* @Last Modified time: 2021-10-13 15:29:27
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -110,12 +110,12 @@ module.exports = {
     ],
     "/bem/": [],
     "/cli/": [
-      ["ussage.md", "Ussage"],
       ["structure.md", "Directory structure"],
       {
         title: "Design principle",
         collapsable: true,
         children: [
+          ["before-start.md", "Before start"],
           ["component.md", "Component"],
           ["router.md", "Router"],
           ["i18n.md", "I18n"],
