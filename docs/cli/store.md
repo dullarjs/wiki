@@ -61,7 +61,7 @@ export default store;
 - 接下来就相当简单了，支持调用一系列方法【register, action, mutation, getters】，支持链式操作。下面讲一下具体每个方法都有哪些注意事项：
 
   - register 方法是初始化state并赋值【此方法非必须】
-  - action action的参数有三个，第一个为事件的名称，对应的是store文件夹下事件文件。第二个参数代表是否为异步请求接口，默认是false。第三个参数只有在第二个参数为true的情况下才有意义，代表异步请求的方式，get,post,postJSON，目前支持这三种方式。【此方法必须】
+  - action action的参数有三个，第一个为事件的名称，对应的是store文件夹下事件文件。第二个参数代表是否为异步请求接口，默认是false。第三个参数只有在第二个参数为true的情况下才有意义，代表异步请求的方式，get,post,postJSON，upload目前支持这四种方式。【此方法必须】，需要注意的是第四个方法适合<Badge text="表单上传文件时候使用" />
   - mutation ，参数只有一个回调函数，回调函数({ state, payload }) => any; 其中state为当前应用下状态对象。payload里面信息包含接口请求回来的数据，res，以及用户请求的参数params等。【此方法非必须】
   ::: tip 说明
   如果action已经确定为异步请求接口，而mutation又没有的情况下，择异步请求的接口数据不会经过上图所示数据流流转。取而代之的是仅仅发送ajax请求，数据需要在调用的地方做接收处理。
@@ -71,6 +71,7 @@ export default store;
 
 下面列出的是异步请求的案例
 ```js
+// src/applications/test/store/getInfo.ts
 import StoreManager from "@/core/StoreManager";
 const store = new StoreManager("test");
 store
@@ -82,6 +83,94 @@ store
   });
 export default store;
 ```
+
+### 一般情况下我们不直接引入core/StoreManager类进行实例化，而是通过一个中间类来继承
+
+```js
+// src/Store.ts
+
+import { AnyObject } from "./core/types";
+import StoreManager from "@/core/StoreManager";
+class Store extends StoreManager {
+  constructor(moduleName: string, config?: AnyObject) {
+    super(moduleName, config);
+  }
+  protected httpSuccessCallback(args: AnyObject | string): void {
+    // console.log("继承后的http success callback", args);
+  }
+  protected httpFailCallback(args: any): void {
+    console.log("继承后的http fail callback", args);
+    YnToast({ message: "服务器异常", position: "middle" });
+    Promise.reject(args);
+    return args;
+  }
+  protected httpParamsModifier(args: AnyObject): AnyObject {
+    return args;
+  }
+  protected setRequestHeaders(uri: string, params: AnyObject): AnyObject {
+    return {
+      headers: {
+        userId: "3257",
+        userCode: "YN20200060",
+        compId: "2a55af39-60d4-c0b9-bf27-08d89cc0d622",
+        ecsUserId: "11ebdaff992f472e93c47df16a3153d8",
+      }
+    };
+  }
+}
+export default Store;
+
+```
+
+```js
+// src/applications/test/store/getInfo.ts
+
+import Store from "@/Store";
+const store = new Store("test");
+store
+  .register({ state: {} })
+  .action("getInfo", true)
+  .mutation(res => {
+    const { payload, state } = res;
+    console.log(payload, state);
+  });
+export default store;
+```
+
+好奇的你可能会问，这么写有什么好处呢？
+
+主要是防止业务逻辑到core/*文件夹下去修改，也就是说保护底层代码不受业务逻辑污染
+
+那你还可能会问，这个文件到底有哪些情况我会用到而需要去改呢？
+
+就像上面的案例一样，在继承StoreManager类的时候，有个方法重写了，setRequestHeaders，那这个方法是干啥的呢？有些时候我们发送Ajax请求需要在请求头信息增加一些认证参数，确保每次请求的合法性，那这个方法就是设置请求头信息的参数的。如上案例，当你重写setRequestHeaders方法并给定请求头信息字段的时候，在后续每次发送的http请求都会携带这些头信息。
+
+::: warning
+这里需要注意，假如你请求的服务存在不同的认证情况，例如 在请求/user/*这类接口的时候需要在请求头信息增加a,b两个字段，而在请求/address/*这类的接口的时候需要在请求头信息增加c,d两个字段，那怎么办呢？细心的你可能注意到，setRequestHeaders方法有两个参数，第一个参数uri也即你发送Ajax请求的服务地址，第二个参数则为当前请求所传的参数，一般情况下我们用不到第二个参数。这时候你可以根据uri的值来判断最终需要设置什么请求头，也即：
+
+```js
+protected setRequestHeaders(uri: string, params: AnyObject): AnyObject {
+  if (uri.startsWith("/user")) {
+    return {
+      a,
+      b
+    }
+  }
+  if (uri.startsWith("/address")) {
+    return {
+      c,
+      d
+    }
+  }
+}
+```
+:::
+
+### 如何处理下载Excel等文件流
+
+StoreManager里面内置了axios方法，我们使用axios作为http发送的方法。而axios是封装在core文件下的，为了保证代码的健壮性及未来维护方便我们是不允许修改core下面的任何东西。所以假如你有需求要去设置axios怎么办？就像上面案例给的headers的案例一样，我要去修改请求头信息，我们有方法处理（setRequestHeaders），那如果我要修改其他字段，例如responseType等，该如何修改？
+
+拿下载为例，目前我们提供的Ajax方法仅仅有4种类型【get, post, postJSON, upload】
 
 
 
