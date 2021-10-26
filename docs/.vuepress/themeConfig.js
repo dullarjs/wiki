@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-10-13 15:29:27
+* @Last Modified time: 2021-10-26 14:48:22
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -120,6 +120,7 @@ module.exports = {
           ["router.md", "Router"],
           ["i18n.md", "I18n"],
           ["store.md", "Store"],
+          ["extend.md", "二开相关"],
           ["export-application.md", "Application"],
           ["vue-class-component.md", "Vue class component"]
         ]

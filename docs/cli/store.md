@@ -170,7 +170,27 @@ protected setRequestHeaders(uri: string, params: AnyObject): AnyObject {
 
 StoreManager里面内置了axios方法，我们使用axios作为http发送的方法。而axios是封装在core文件下的，为了保证代码的健壮性及未来维护方便我们是不允许修改core下面的任何东西。所以假如你有需求要去设置axios怎么办？就像上面案例给的headers的案例一样，我要去修改请求头信息，我们有方法处理（setRequestHeaders），那如果我要修改其他字段，例如responseType等，该如何修改？
 
-拿下载为例，目前我们提供的Ajax方法仅仅有4种类型【get, post, postJSON, upload】
+拿下载为例，目前我们提供的Ajax方法仅仅有4种类型【get, post, postJSON, upload】，但是默认axios内置的responseType是json，而下载文件需要把responseType设置为blob，怎么做呢？
+
+```js
+import Store from "@/Store";
+const store = new Store("platform", { responseType: "blob" });
+store
+  .register({ state: {} })
+  .action("BridgeCardTemplate", true, "get")
+  .mutation(result => {
+    const { payload, state } = result;
+    const { res, resolve, reject } = payload;
+    resolve(res);
+  });
+export default store;
+```
+
+上面的代码我们已经很熟悉了，实例化一个Store对象，然后在第二个参数里面可以在实例化这个Store的时候把responseType改成需要的值。实际上第二个参数就是axios实例化的时候传的配置参数【config】
+```js
+axios.create([config])
+```
+[具体可以查看axios的文档](https://github.com/axios/axios)
 
 
 

@@ -1,6 +1,7 @@
 # 如何配置路由
 
-### 配置路由相当简单，看下面案例
+## 配置路由相当简单，看下面案例
+
 ```js
 // 首先需要引入路由管理类
 import { default as RouterManager } from "@/core/RouterManager";
@@ -33,7 +34,7 @@ export default router.getRoutes();
 
 :::
 
-### 有人可能会有疑问，那我怎么注册404页面呢？
+## 有人可能会有疑问，那我怎么注册404页面呢
 
 ```js
 router.register([
@@ -46,3 +47,53 @@ router.register([
 ```
 
 - RouterManager内部做了特殊处理，如果是通配符 * 则注册为一级路由，此时命名空间不再限制
+
+## 路由守卫
+
+```js
+import "./hooks";
+import { logInfo } from "@/config";
+logInfo();
+import { default as Platform } from "@/core/Platform";
+import Vue from "vue";
+import App from "./App.vue";
+import "./registerServiceWorker";
+import { customApps } from "@/custom";
+import Mercury from "@dullar/mercury";
+import svgs from "@/assets/iconfont/svgs";
+import { Route, NavigationGuardNext } from "vue-router";
+import LoginStore from "@/applications/login/lib/LocalStore";
+const Store = new LoginStore("session", "20210909");
+
+Mercury.config({ YnIconfont: { svgs, svgPrefix: "icon" } });
+Vue.config.productionTip = false;
+Vue.use(Mercury);
+
+const p = new Platform({ id: "#app", App });
+p.registerRouterHooks(
+  "beforeEach",
+  (from: Route, to: Route, next: NavigationGuardNext) => {
+    const token = Store.get("headerToken");
+
+    if (
+      Object.keys(token).length == 0 &&
+      from.name != "login" &&
+      from.name != "ecslogin"
+    ) {
+      const redirect = btoa(encodeURIComponent(to.path));
+      next({ path: `/login?redirect=${redirect}` });
+    } else {
+      console.log(to);
+      next({});
+    }
+  }
+);
+p.install("admin");
+p.install("goods");
+p.install("permission");
+p.install("platform"); //平台
+p.install("login"); //平台
+p.install("ecslogin");
+p.install(customApps);
+p.startUp();
+```
