@@ -1,4 +1,9 @@
-# 如何配置路由
+
+:::warning
+[所有的案例都可以在这里找到源码](https://github.com/justbefree-org/vue2-ts)
+
+[也可以查看编译后运行的案例](https://template-v2.dullar.xyz)
+:::# 如何配置路由
 
 ## 配置路由相当简单，看下面案例
 

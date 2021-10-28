@@ -1,3 +1,8 @@
+:::warning
+[所有的案例都可以在这里找到源码](https://github.com/justbefree-org/vue2-ts)
+
+[也可以查看编译后运行的案例](https://template-v2.dullar.xyz)
+:::
 # Vue Class Component
 
 详细使用请参考官方文档[vue-class-component](https://class-component.vuejs.org/)

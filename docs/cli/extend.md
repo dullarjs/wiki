@@ -1,3 +1,8 @@
+:::warning
+[所有的案例都可以在这里找到源码](https://github.com/justbefree-org/vue2-ts)
+
+[也可以查看编译后运行的案例](https://template-v2.dullar.xyz)
+:::
 # 项目上如何二开
 
 ## 二开设计原理
@@ -42,8 +47,8 @@ src/custom/test
 
 有了上面我们对组件的分类，结合我们实际的场景，二开无非有三种情况：
 
- - 只有标准产品应用内某个业务组件需要二开
- - 只有标准产品应用内某个路由级组件需要二开
+ - 标准产品应用内某个业务组件需要二开
+ - 标准产品应用内某个路由级组件需要二开
  - 除了标准产品提供的，还有额外新增的路由组件
 
  上面三种情况有可能会是多种因素叠加，但是从技术上来说只需要考虑三种情况。
@@ -53,13 +58,19 @@ src/custom/test
  ```js
 // src/applications/test/hello-world/index.ts
 import { loadComponent } from "@/core/utils/load";
-export default loadComponent("test/parent");
+export default loadComponent("test/hello-world");
  ```
+除此之外还需要在index.ts的同级别目录下建一个default.ts文件
+
+```js
+// src/applications/test/hello-world/default.ts
+export defalut () => import(/* webpackChunkName: "hello-world" */, "./helloWorld.vue");
+```
 
  ```js
 // src/custom/test/hello-world/index.ts
 export default () =>
-  import(/* webpackChunkName: "overwriteParent" */ "./parent.vue");
+  import(/* webpackChunkName: "overwriteParent" */ "./helloWorld.vue");
  ```
  区别点在于，applications【标准产品目录】下的业务组件在对外暴露的时候需在index.ts内调用 src/core/utils/load.ts下的loadComponent方法。而custom【二开定制化产品目录】下的业务组件在对外暴露的时候只需要通过import。
 

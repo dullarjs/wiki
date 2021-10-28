@@ -1,3 +1,8 @@
+:::warning
+[所有的案例都可以在这里找到源码](https://github.com/justbefree-org/vue2-ts)
+
+[也可以查看编译后运行的案例](https://template-v2.dullar.xyz)
+:::
 # 写在前面
 
 ts版Vue组件跟js版Vue的书写形式主要的区别就在于，Vue因为天生是不支持跟TS的结合，所以要实现跟TS结合就需要引入“语法糖”，把Vue现有的写组件的方式转换成TS类式，然后再通过“语法糖”转换成Vue可识别的语法。
