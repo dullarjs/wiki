@@ -64,7 +64,7 @@ export default loadComponent("test/hello-world");
 
 ```js
 // src/applications/test/hello-world/default.ts
-export defalut () => import(/* webpackChunkName: "hello-world" */, "./helloWorld.vue");
+export defalut () => import(/* webpackChunkName: "hello-world" */ "./helloWorld.vue");
 ```
 
  ```js
