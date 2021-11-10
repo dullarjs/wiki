@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-11-05 09:20:18
+* @Last Modified time: 2021-11-10 18:18:51
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -105,6 +105,8 @@ module.exports = {
           ["slide.md", "slide"],
           ["image.md", "image"],
           ["form.md", "form"],
+          ["picker.md", "picker"],
+          ["date-picker.md", "date-picker"],
         ]
       }
     ],
