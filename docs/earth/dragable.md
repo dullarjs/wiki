@@ -5,7 +5,7 @@
 <template>
   <div id="d-container">
     <h2>yn-dragable</h2>
-    <yn-dragable @click="handleClick">
+    <yn-dragable :boundary="boundary" :defaultRight="50" :defaultBottom="100" @click="handleClick">
       <div class="ball"></div>
     </yn-dragable>
   </div>
@@ -15,6 +15,12 @@
     name: "YnDragablePage",
     data() {
       return {
+        boundary: {
+          left: 20,
+          right: 20,
+          top: 50,
+          bottom: 100
+        }
       };
     },
     methods: {
@@ -35,4 +41,5 @@
     box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 0 8px rgb(0 0 0 / 30%), 0 12px 12px rgb(0 0 0 / 40%);
   }
 </style>
+
 ```
