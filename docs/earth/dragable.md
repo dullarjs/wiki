@@ -1,5 +1,5 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/dragable"></demo-mobile>
-# dialog
+# dragable
 
 ```js
 <template>
