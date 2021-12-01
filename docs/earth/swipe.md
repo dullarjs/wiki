@@ -5,7 +5,7 @@
 ```vue
 <template>
   <div>
-    <yn-swipe ref="swipe1" indicatorType="number">
+    <yn-swipe ref="swipe1" indicatorType="number" @ticking="handleTicking">
       <yn-swipe-item>
         <div>
           <img src="./images/apple-1.jpg" />
@@ -32,7 +32,15 @@
 </template>
 <script>
 export default {
+  data() {
+    activeIndex: 0,
+    length: 0,
+  },
   methods: {
+    handleTicking(e) {
+      this.activeIndex = e.activeIndex;
+      this.length = e.length;
+    },
     prev(ref) {
       console.log(ref);
       this.$refs[ref].prev();
