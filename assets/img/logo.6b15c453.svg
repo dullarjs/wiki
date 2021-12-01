@@ -1,0 +1,45 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="368px" height="368px" viewBox="0 0 368 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+    <title>3@3x</title>
+    <g id="3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ç¼ç»" transform="translate(66.000000, 2.000000)">
+            <!-- <path d="M235,0 C254.882251,-3.65231026e-15 271,16.117749 271,36 L271,208 L271,208 L199,208 L199,36 C199,16.117749 215.117749,3.65231026e-15 235,0 Z" id="path" fill="#0165FF" class="AGRXInlI_0"></path> -->
+            <path d="M235,200 L235,40" id="path" stroke="#0165FF" stroke-width="72" stroke-linecap="round" class="AGRXInlI_0"></path>
+            <path d="M117.5,327.5 C182.393458,327.5 235,274.221885 235,208.5" id="path" stroke="#00B2FF" stroke-width="72" stroke-linecap="round" class="AGRXInlI_1"></path>
+            <path d="M0,208.5 C0,274.221885 52.6065419,327.5 117.5,327.5" id="path" stroke="#45D6FE" stroke-width="72" stroke-linecap="round" class="AGRXInlI_2"></path>
+            <path d="M117.5,89.5 C52.6065419,89.5 0,142.778115 0,208.5" id="path" stroke="#9FEAFF" stroke-width="72" stroke-linecap="round" class="AGRXInlI_3"></path>
+        </g>
+    </g>
+    <style data-made-with="vivus-instant">
+        .AGRXInlI_0{
+            stroke-dasharray:530 532;stroke-dashoffset:531;animation:AGRXInlI_draw_0 7200ms linear 0ms infinite,AGRXInlI_fade 7200ms linear 0ms infinite;
+        }
+        .AGRXInlI_1{
+            stroke-dasharray:186 188;stroke-dashoffset:187;animation:AGRXInlI_draw_1 7200ms linear 0ms infinite,AGRXInlI_fade 7200ms linear 0ms infinite;
+        }
+        .AGRXInlI_2{
+            stroke-dasharray:186 188;stroke-dashoffset:187;animation:AGRXInlI_draw_2 7200ms linear 0ms infinite,AGRXInlI_fade 7200ms linear 0ms infinite;
+        }
+        .AGRXInlI_3{
+            stroke-dasharray:186 188;stroke-dashoffset:187;animation:AGRXInlI_draw_3 7200ms linear 0ms infinite,AGRXInlI_fade 7200ms linear 0ms infinite;
+        }
+        @keyframes AGRXInlI_draw{
+            100%{stroke-dashoffset:0;}
+        }
+        @keyframes AGRXInlI_fade{
+            0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}
+        }
+        @keyframes AGRXInlI_draw_0{
+            11.11111111111111%{stroke-dashoffset: 531}38.88888888888889%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}
+        }
+        @keyframes AGRXInlI_draw_1{
+            15.740740740740739%{stroke-dashoffset: 187}43.51851851851851%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}
+        }
+        @keyframes AGRXInlI_draw_2{
+            20.37037037037037%{stroke-dashoffset: 187}48.148148148148145%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}
+        }
+        @keyframes AGRXInlI_draw_3{
+            25%{stroke-dashoffset: 187}52.77777777777778%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}
+        }
+    </style>
+</svg>
