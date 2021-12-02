@@ -2,14 +2,15 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-11-24 11:15:30
+* @Last Modified time: 2021-12-01 18:06:49
 * @E-mail: justbefree@126.com
 */
 module.exports = {
   nav: [
     { text: "Home", link: "/" },
+    { text: "Design", link: "/design/" },
     {
-      text: "components",
+      text: "Components",
       items: [
         {
           text: "@dullar/earth",
@@ -22,9 +23,12 @@ module.exports = {
       ]
     },
     { text: "BEM", link: "/bem/" },
-    { text: "cli", link: "/cli/" }
+    { text: "Cli", link: "/cli/" }
   ],
   sidebar: {
+    "/design/": [
+      ["colors.md", "Colors"]
+    ],
     "/earth/": [
       ["install.md", "Installation"],
       {
