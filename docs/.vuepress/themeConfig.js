@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-12-01 18:06:49
+* @Last Modified time: 2021-12-03 17:19:12
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -22,6 +22,7 @@ module.exports = {
         }
       ]
     },
+    { text: "Map", link: "/map/" },
     { text: "BEM", link: "/bem/" },
     { text: "Cli", link: "/cli/" }
   ],
@@ -116,6 +117,7 @@ module.exports = {
       }
     ],
     "/bem/": [],
+    "/map/": [],
     "/cli/": [
       ["structure.md", "Directory structure"],
       {
