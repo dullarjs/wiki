@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-12-03 17:19:12
+* @Last Modified time: 2021-12-03 17:34:19
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -34,7 +34,7 @@ module.exports = {
       ["install.md", "Installation"],
       {
         title: "Basic components",
-        collapsable: true,
+        collapsable: false,
         children: [
           ["toast.md", "toast"],
           ["indicator.md", "indicator"],
@@ -73,7 +73,7 @@ module.exports = {
       ["install.md", "Installation"],
       {
         title: "Basic components",
-        collapsable: true,
+        collapsable: false,
         children: [
           ["toast.md", "toast"],
           ["indicator.md", "indicator"],
@@ -122,7 +122,7 @@ module.exports = {
       ["structure.md", "Directory structure"],
       {
         title: "Design principle",
-        collapsable: true,
+        collapsable: false,
         children: [
           ["before-start.md", "Before start"],
           ["component.md", "Component"],
