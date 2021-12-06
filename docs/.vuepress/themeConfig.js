@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-12-03 17:34:19
+* @Last Modified time: 2021-12-06 10:18:44
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -113,6 +113,7 @@ module.exports = {
           ["form.md", "form"],
           ["picker.md", "picker"],
           ["date-picker.md", "date-picker"],
+          ["switch.md", "switch"]
         ]
       }
     ],
