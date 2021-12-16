@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-12-06 10:18:44
+* @Last Modified time: 2021-12-16 18:35:25
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -65,7 +65,8 @@ module.exports = {
           ["counter.md", "counter"],
           ["skeleton.md", "skeleton"],
           ["animation-list.md", "animation-list"],
-          ["dragable.md", "dragable"]
+          ["dragable.md", "dragable"],
+          ["magic-layer.md", "magic-layer"]
         ]
       }
     ],
