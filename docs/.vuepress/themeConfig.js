@@ -2,13 +2,12 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2021-12-16 18:35:25
+* @Last Modified time: 2021-12-27 10:18:50
 * @E-mail: justbefree@126.com
 */
 module.exports = {
   nav: [
     { text: "Home", link: "/" },
-    { text: "Design", link: "/design/" },
     {
       text: "Components",
       items: [
@@ -27,9 +26,6 @@ module.exports = {
     { text: "Cli", link: "/cli/" }
   ],
   sidebar: {
-    "/design/": [
-      ["colors.md", "Colors"]
-    ],
     "/earth/": [
       ["install.md", "Installation"],
       {
