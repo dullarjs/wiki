@@ -1,10 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/magic-layer"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="magic-layer"></cli-qrcode>
 # magic-layer
-
-建议手机上扫码访问体验
-
-<qr-code name="magic-layer"></qr-code>
-
 
 ::: warning
 

@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/toast"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="toast"></cli-qrcode>
 # toast
 
 ### basic usage

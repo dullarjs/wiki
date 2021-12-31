@@ -1,6 +1,8 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/actionSheet"></demo-mobile>
 # action-sheet
 
+## 扫码在手机上查看
+<cli-qrcode name="actionSheet"></cli-qrcode>
 ## 基础用法
 ```vue
 <template>

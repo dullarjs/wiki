@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/indicator"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="indicator"></cli-qrcode>
 # indicator
 
 

@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/tabs"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="tabs"></cli-qrcode>
 # tabs
 
 <demo-tabs demo="1"></demo-tabs>

@@ -1,4 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/animation-list"></demo-mobile>
+
+## 扫码在手机上查看
+<cli-qrcode name="animation-list"></cli-qrcode>
 # animation-list
 
 ::: warning 注意

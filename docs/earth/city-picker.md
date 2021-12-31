@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/cityPicker"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="cityPicker"></cli-qrcode>
 # city-picker
 
 ```vue

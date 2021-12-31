@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/counter"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="counter"></cli-qrcode>
 # yn-counter
 
 ```vue

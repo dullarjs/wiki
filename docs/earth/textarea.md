@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/textarea"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="textarea"></cli-qrcode>
 # textarea
 
 ## 基础用法

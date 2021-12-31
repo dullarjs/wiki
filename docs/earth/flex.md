@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/flex"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="flex"></cli-qrcode>
 # flex
 
 

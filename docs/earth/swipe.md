@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/swipe"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="swipe"></cli-qrcode>
 # swipe
 
 ## 左右滑动

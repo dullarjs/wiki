@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/submitAction"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="submitAction"></cli-qrcode>
 # submit-action
 
 <demo-submitAction></demo-submitAction>

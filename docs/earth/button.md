@@ -1,4 +1,7 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/button"></demo-mobile>
+
+## 扫码在手机上查看
+<cli-qrcode name="button"></cli-qrcode>
 # button
 
 ```vue

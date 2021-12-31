@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/pickyStepper"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="pickyStepper"></cli-qrcode>
 # picky-stepper
 
 ## 简单用法（单选）

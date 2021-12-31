@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/dropdownMenu"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="dropdownMenu"></cli-qrcode>
 # dropdown-menu
 
 <demo-dropdownMenu></demo-dropdownMenu>

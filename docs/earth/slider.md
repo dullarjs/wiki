@@ -1,4 +1,6 @@
 <demo-mobile location="https://ui.dullar.xyz/earth/#/slider"></demo-mobile>
+## 扫码在手机上查看
+<cli-qrcode name="slider"></cli-qrcode>
 # slider
 
 ## basic usage
