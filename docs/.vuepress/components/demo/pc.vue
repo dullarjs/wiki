@@ -1,6 +1,6 @@
 <template>
   <div class="pc-box">
-    <iframe :src="location" :width="this.width" height="600px"></iframe>
+    <iframe :src="computedLocation" :width="this.width" height="600px"></iframe>
   </div>
 </template>
 <script>
@@ -12,6 +12,11 @@ export default {
       default: "100%"
     },
     location: String
+  },
+  computed: {
+    computedLocation() {
+      return this.location.replace("/#/", `/index.html?version=${random}#/`);
+    }
   }
 };
 </script>
