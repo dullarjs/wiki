@@ -3,15 +3,21 @@
     <div class="logo-box" :class="this.loading ? '' : 'hide'">
       <img class="animation-logo" :src="logo">
     </div>
-    <iframe :src="location" :class="this.loading ? 'hide' : ''" width="320px" @load="handleOnload" @error="handleOnError" height="568px"></iframe>
+    <iframe :src="computedLocation" :class="this.loading ? 'hide' : ''" width="320px" @load="handleOnload" @error="handleOnError" height="568px"></iframe>
   </div>
 </template>
 <script>
 import logo from "./images/logo.svg";
+const random = Math.random();
 export default {
   name: "DemoMobile",
   props: {
     location: String
+  },
+  computed: {
+    computedLocation() {
+      return this.location.replace("/#/", `/index.html?version=${random}#/`);
+    }
   },
   data() {
     return {
