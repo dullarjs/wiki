@@ -4,6 +4,7 @@
   </div>
 </template>
 <script>
+const random = Math.random();
 export default {
   name: "DemoPc",
   props: {
