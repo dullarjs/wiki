@@ -3,6 +3,12 @@
 <cli-qrcode name="pullRefresh"></cli-qrcode>
 # pull-refresh
 
+::: warning 非常重要
+因为yn-pull-refresh的使用场景基本是属于最外层DOM，所以有些元素本身在yn-pull-refresh内并且有自己的滑动事件，为了防止部分元素滑动影响到yn-pull-refresh的滑动事件（其实就是冒泡事件）。为此，yn-pull-refresh新增了一个props，cancelBubbles，这个props接收一个数组，数组内为class字符串，表示当前元素禁止冒泡时间影响到yn-pull-refresh:
+
+例如：[".a", ".b", ".c"]，表示class为a、b、c的元素在yn-pull-refresh内禁止冒泡事件往上传递
+:::
+
 ```vue
 <template>
   <div>
