@@ -27,6 +27,10 @@ module.exports = {
         {
           text: "@dullar/mercury",
           link: "/mercury/"
+        },
+        {
+          text: "@dullar/mars",
+          link: "/mars/"
         }
       ]
     },
@@ -145,6 +149,25 @@ module.exports = {
         ]
       },
       ["vue-property-decorator.md", "Vue property decorator"]
+    ],
+    "/mars/": [
+      ["install.md", "Installation"],
+      {
+        title: "Basic components",
+        collapsable: false,
+        children: [
+          ["indicator.md", "indicator"],
+          ["spin.md", "spin"],
+          ["iconfont.md", "iconfont"],
+          ["checkbox.md", "checkbox"],
+          ["radiobox.md", "radiobox"],
+          ["calendar.md", "calendar"],
+          ["popup.md", "popup"],
+          ["button.md", "button"],
+          ["city-picker.md", "city-picker"],
+          ["dialog.md", "dialog"]
+        ]
+      }
     ]
   },
   lastUpdated: "Last Updated",
