@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
-* @Last Modified time: 2022-02-25 10:05:32
+ * @Last Modified time: 2022-02-28 11:30:09
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -27,6 +27,10 @@ module.exports = {
         {
           text: "@dullar/mercury",
           link: "/mercury/"
+        },
+        {
+          text: "@dullar/mars",
+          link: "/mars/"
         }
       ]
     },
@@ -120,7 +124,8 @@ module.exports = {
           ["form.md", "form"],
           ["picker.md", "picker"],
           ["date-picker.md", "date-picker"],
-          ["switch.md", "switch"]
+          ["switch.md", "switch"],
+          ["select.md", "select"]
         ]
       }
     ],
@@ -145,6 +150,25 @@ module.exports = {
         ]
       },
       ["vue-property-decorator.md", "Vue property decorator"]
+    ],
+    "/mars/": [
+      ["install.md", "Installation"],
+      {
+        title: "Basic components",
+        collapsable: false,
+        children: [
+          ["indicator.md", "indicator"],
+          ["spin.md", "spin"],
+          ["iconfont.md", "iconfont"],
+          ["checkbox.md", "checkbox"],
+          ["radiobox.md", "radiobox"],
+          ["calendar.md", "calendar"],
+          ["popup.md", "popup"],
+          ["button.md", "button"],
+          ["city-picker.md", "city-picker"],
+          ["dialog.md", "dialog"]
+        ]
+      }
     ]
   },
   lastUpdated: "Last Updated",

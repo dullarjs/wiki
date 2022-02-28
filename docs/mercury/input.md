@@ -1,3 +1,10 @@
+<!--
+ * @Author: yegl
+ * @Date: 2022-02-28 09:37:32
+ * @Last Modified by: yegl
+ * @Last Modified time: 2022-02-28 10:55:25
+ * @E-mail: yglgzyx@126.com
+-->
 <demo-pc location="https://ui.dullar.xyz/mercury/#/input"></demo-pc>
 # input
 
@@ -55,4 +62,32 @@
 
 ```vue
 <yn-input type="text" underline/>
+```
+
+## 输入建议
+
+```vue
+<yn-autocomplete v-model="value" :haddleSearch="querySearch" @select="handleSelect" iconName="down-arrow">
+```
+
+## 输入建议(自定义模板)
+
+```vue
+<yn-autocomplete v-model="value" :haddleSearch="querySearch" @select="handleSelect">
+  <template v-slot:customize="item">
+    <div class="value">{{ item.value }}</div>
+    <span class="name">{{ item.goods_name }}</span>
+  </template>
+</yn-autocomplete>
+```
+
+## 输入建议(自定义模板-异步获取)
+
+```vue
+<yn-autocomplete v-model="value" :haddleSearch="querySearchL" @select="handleSelect" showLoading>
+  <template v-slot:customize="item">
+    <div class="value">{{ item.value }}</div>
+    <span class="name">{{ item.goods_name }}</span>
+  </template>
+</yn-autocomplete>
 ```
