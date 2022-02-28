@@ -414,6 +414,107 @@ export default {
 };
 </script>
 ```
+## oneStepMode
+```vue
+<template>
+  <div>
+    <yn-picky-stepper
+      v-model="picker8"
+      oneStepMode
+      @success="handleSuccess"
+      :steps="steps1"
+      :submit="submit"
+      @picked="handleOnPick"
+    ></yn-picky-stepper>
+  </div>
+</template>
+<script type="text/javascript">
+const persons = require("./persons.json");
+persons.forEach(p => {
+  p.label = p.Name;
+});
+const reasons = require("./reasons.json");
+export default {
+  name: "YnPickyStepperPage",
+  methods: {
+    handleClick(e) {
+      this[`picker${e}`] = !this[`picker${e}`];
+    },
+    submit(args = {}) {
+      console.log("这个是需要提交的参数", args);
+      return new Promise((resolve, reject) => {
+        console.log(reject);
+        setTimeout(() => {
+          resolve("ok");
+        }, 3000);
+      }).catch(err => {
+        console.log("错误要在外面执行", err);
+      });
+    },
+    handleSuccess(res) {
+      console.log("选择的数据", res);
+    },
+    switchData(num) {
+      this.steps7 = this[`steps${num}`];
+    },
+    handleOnPick(e) {
+      console.log("选择的是", e);
+    }
+  },
+  data() {
+    return {
+      picker8: false,
+      steps1: [
+        {
+          title: "请选择原因",
+          list: [
+            { label: "行程变化", value: "行程变化" },
+            { label: "目的地有住宿", value: "目的地有住宿" },
+            { label: "预算超支", value: "预算超支" },
+            {
+              label: "其他",
+              type: "input",
+              placeholder: "请输入原因，不是必填",
+              value: "",
+              required: false
+            },
+            {
+              label: "还有其他呢",
+              type: "textarea",
+              placeholder: "请输入原因，默认必填",
+              value: "",
+              counter: true,
+              maxlength: 100,
+              // required: true
+            }
+          ],
+          multiple: false
+        }
+      ]
+    };
+  },
+  mounted() {
+    const personStep = {
+      title: "请选择改签人员",
+      list: persons,
+      multiple: true
+    };
+    const reasonStep = {
+      title: "请选择原因",
+      list: reasons,
+      multiple: false
+    };
+    this.steps6.push(personStep);
+    setTimeout(() => {
+      this.steps6.push(reasonStep);
+    }, 1000);
+    console.log(this.steps6);
+  }
+};
+</script>
+
+```
+
 ### Test data
 ::: details persons.json
 ```js
