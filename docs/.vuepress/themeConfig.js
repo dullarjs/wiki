@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
- * @Last Modified time: 2022-03-03 11:38:17
+ * @Last Modified time: 2022-05-29 09:12:27
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
       items: [
         {
           text: "Module federation",
-          link: "http://lizhuang.xyz/module-federation-wiki/"
+          link: "http://lizhuang.xyz/mfe/"
         },
         {
           text: "vueggy（基于Vue3+TypeScript组件库）",
