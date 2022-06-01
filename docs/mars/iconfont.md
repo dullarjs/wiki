@@ -1,6 +1,5 @@
 
-## 扫码在手机上查看
-<cli-qrcode name="mars/iconfont"></cli-qrcode>
+## [查看demo](https://ui.dullar.xyz/mars/#/iconfont)
 # iconfont
 ```vue
 <yn-iconfont :name="iconphone-number" @click="handleClick"></yn-iconfont>
