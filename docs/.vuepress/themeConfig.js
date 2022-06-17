@@ -2,7 +2,7 @@
 * @Author: Just be free
 * @Date:   2020-07-10 14:04:39
 * @Last Modified by:   Just be free
- * @Last Modified time: 2022-05-29 09:12:27
+ * @Last Modified time: 2022-06-17 15:19:31
 * @E-mail: justbefree@126.com
 */
 module.exports = {
@@ -80,7 +80,8 @@ module.exports = {
           ["animation-list.md", "animation-list"],
           ["dragable.md", "dragable"],
           ["magic-layer.md", "magic-layer"],
-          ["textarea.md", "textarea"]
+          ["textarea.md", "textarea"],
+          ["drawer.md", "drawer"]
         ]
       }
     ],
