@@ -1,10 +1,8 @@
 
 # UI components online docs
 
-## @dullar/earth   
+## @dullar/mars 
 
-[![npm version](https://badge.fury.io/js/@dullar%2Fearth.svg)](https://badge.fury.io/js/@dullar%2Fearth)
+[![npm version](https://badge.fury.io/js/@dullar%2Fearth.svg)](https://badge.fury.io/js/@dullar%2Fmars)
 
-## 移动端访问入口
-
-<qr-code name="mars"></qr-code>
+## [Demo](https://ui.dullar.xyz/mars/#/)

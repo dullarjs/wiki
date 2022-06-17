@@ -1,6 +1,5 @@
 
-## 扫码在手机上查看
-<cli-qrcode name="mars/checkbox"></cli-qrcode>
+## [查看demo](https://ui.dullar.xyz/mars/#/checkbox)
 # checkbox
 
 ```vue

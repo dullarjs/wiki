@@ -1,6 +1,5 @@
 
-## 扫码在手机上查看
-<cli-qrcode name="mars/button"></cli-qrcode>
+## [查看demo](https://ui.dullar.xyz/mars/#/button)
 # button
 
 ```vue

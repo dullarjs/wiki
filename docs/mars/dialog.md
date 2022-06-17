@@ -1,6 +1,4 @@
-
-## 扫码在手机上查看
-<cli-qrcode name="mars/dialog"></cli-qrcode>
+## [查看demo](https://ui.dullar.xyz/mars/#/dialog)
 # dialog
 
 ## 基本用法
